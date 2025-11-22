@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boutique - Tous nos Trésors Berbères</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Logo Azrar - Trésors de Kabylie" >
+                <span>Trésors de Kabylie</span>
+            </div>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="produits.html" class="active">Boutique</a>
+                <a href="contact.html">Contact</a>
+                <a href="accessoires.html">Accessoires</a> </nav>
+            <form class="search-form" action="#" method="get">
+                <input type="text" placeholder="Rechercher un bijou…" name="q" />
+                <button type="submit" aria-label="Rechercher"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <section class="page-catalogue products">
+        <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
+        
+        <h2>Toute notre Collection Amazigh</h2>
+        <p class="intro-catalogue">Parcourez l'ensemble de nos créations uniques : colliers, bracelets, bagues et broches traditionnels et contemporains. Chaque pièce est le fruit d'un savoir-faire ancestral.</p>
+
+        <div class="grid">
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/collier.jpg" alt="Collier Amazigh principal" >
+                    </div>
+                <h3>Collier Amazigh</h3>
+                <p>Collier traditionnel berbère en argent et perles.</p>
+                <p class="prix">127,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod1">Quantité :</label>
+                        <input type="number" id="qty-prod1" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+            
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/braceletF.jpg" alt="Bracelet Kabyle face" >
+                </div>
+                <h3>Bracelet Kabyle</h3>
+                <p>Bracelet artisanal en filigrane.</p>
+                <p class="prix">87,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod2">Quantité :</label>
+                        <input type="number" id="qty-prod2" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/1.jpg" alt="Collier en Argent vue 1" >
+                </div>
+                <h3>Collier en Argent</h3>
+                <p>Collier traditionnelle en argent massif et ébène.</p>
+                <p class="prix">154,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod3">Quantité :</label>
+                        <input type="number" id="qty-prod3" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/bague.jpg" alt="Bague moderne 1"/>
+                </div>
+                <h3>Bague Tiziri</h3>
+                <p>Anneau en argent ciselé, style moderne.</p>
+                <p class="prix">37,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod4">Quantité :</label>
+                        <input type="number" id="qty-prod4" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/C4.jpg" alt="Collier Kabyle 2"/>
+                </div>
+                <h3>Collier Kabyle</h3>
+                <p>Élégantes boucles en émail cloisonné.</p>
+                <p class="prix">99,99€</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod5">Quantité :</label>
+                        <input type="number" id="qty-prod5" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/boucle.jpg" alt="Boucles d’oreilles 1"/>
+                    </div>
+                <h3>Boucles d’oreilles</h3>
+                <p>Boucles d’Oreilles Pendantes Élégantes.</p>
+                <p class="prix">54,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod6">Quantité :</label>
+                        <input type="number" id="qty-prod6" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/brch.jpg" alt="Broche Berbère Élégante 1"/>
+                    </div>
+                <h3>Broche Berbère Élégante</h3>
+                <p>Broche en argent arbore des motifs berbères gravés avec soin.</p>
+                <p class="prix">147,99€</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod7">Quantité :</label>
+                        <input type="number" id="qty-prod7" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/branchee.jpg" alt="Broche signe Amazigh 1"/>
+                    </div>
+                <h3>Broche signe Amazigh</h3>
+                <p>Broche traditionnelle en argent massif et corail et en signe amazigh .</p>
+                <p class="prix">134,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod8">Quantité :</label>
+                        <input type="number" id="qty-prod8" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+            
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/diadéme.jpg" alt="Diadème Amazigh 1"/>
+                    </div>
+                <h3>Diadème Amazigh</h3>
+                <p>Diadème Royal Éclatant Amazigh.</p>
+                <p class="prix">376,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod9">Quantité :</label>
+                        <input type="number" id="qty-prod9" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+            
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/bracelet.jpg" alt="Bracelet Kabyle Traditionnel 1" >
+                    </div>
+                <h3>Bracelet Kabyle Traditionnel</h3>
+                <p>Orné de motifs floraux et de pierres colorées.</p>
+                <p class="prix">63,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod10">Quantité :</label>
+                        <input type="number" id="qty-prod10" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+            
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/brechh.jpg" alt="Broche Kabyle en Argent Massif 1" >
+                    </div>
+                <h3>Broche Kabyle en Argent Massif</h3>
+                <p>Sublime broche kabyle réalisée en argent massif .</p>
+                <p class="prix">433,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod11">Quantité :</label>
+                        <input type="number" id="qty-prod11" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+            
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/parure.jpg" alt="Parure en Argent 1" >
+                    </div>
+                <h3>Parure en Argent</h3>
+                <p>Parure en argent massif, composée d’un collier finement ciselé et d’un bracelet assorti.</p>
+                <p class="prix">278,5 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod12">Quantité :</label>
+                        <input type="number" id="qty-prod12" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+            
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/akhelkhal.jpg" alt="Akhelkhal Numidia 1" >
+                    </div>
+                <h3>Akhelkhal Numidia</h3>
+                <p>Bijou de cheville en argent.</p>
+                <p class="prix">1749,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod13">Quantité :</label>
+                        <input type="number" id="qty-prod13" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/bagueee.jpg" alt="Bague Aya 1" >
+                    </div>
+                <h3>Bague Aya</h3>
+                <p>Bague Kabyle fabriquée en argent artisanal.</p>
+                <p class="prix">39,99€</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod14">Quantité :</label>
+                        <input type="number" id="qty-prod14" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/amazigh.jpg" alt="Collier signe Amazigh 1" >
+                    </div>
+                <h3>Collier signe Amazigh</h3>
+                <p>Pendentif incrusté de pierres multicolores en signe Amazigh.</p>
+                <p class="prix">49,99€</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod15">Qauntité :</label>
+                        <input type="number" id="qty-prod15" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+            
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/lehna.jpg" alt="Ensemble lehna 1" >
+                    </div>
+                <h3>Ensemble Lehna</h3>
+                <p>Ensemble de deux boucle et une bague en Argent.</p>
+                <p class="prix">79,99€</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod16">Quantité :</label>
+                        <input type="number" id="qty-prod16" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/par.jpg" alt="Parure Nawel 1" >
+                    </div>
+                <h3>Parure Nawel</h3>
+                <p>Parure 5 pièces, Bague, Gourmette et collier ajustable Argent.</p>
+                <p class="prix">299,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod17">Qauntité :</label>
+                        <input type="number" id="qty-prod17" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/tete.jpg" alt="Bijou de tete moyen – Sabrina 1" >
+                    </div>
+                <h3>Bijou de tete moyen – Sabrina</h3>
+                <p>Bijou de tete en Argent.</p>
+                <p class="prix">380,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod18">Quantité :</label>
+                        <input type="number" id="qty-prod18" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/gour.jpg" alt="Gourmette Kenza 1" >
+                    </div>
+                <h3>Gourmette Kenza</h3>
+                <p>Gourmette taille standard enArgent.</p>
+                <p class="prix"> 45,99€</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod19">Qauntité :</label>
+                        <input type="number" id="qty-prod19" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/Bracel.jpg" alt="Bracelet Tafsut 1" >
+                    </div>
+                <h3>Bracelet Tafsut</h3>
+                <p>Une création unique entièrement ciselé à la main dans l’argent.</p>
+                <p class="prix"> 279,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod20">Quantité :</label>
+                        <input type="number" id="qty-prod20" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <div class="gallery">
+                    <img src="img/khemsa.jpg" alt="Bague Khemsa 1" >
+                    </div>
+                <h3>Bague Khemsa</h3>
+                <p>Bague argent massif, Taille ajustable.</p>
+                <p class="prix"> 56,99 €</p>
+                <form action="#" method="get" class="quantity-form">
+                    <div class="quantity-input-group">
+                        <label for="qty-prod21">Quantité :</label>
+                        <input type="number" id="qty-prod21" name="quantite" value="1" min="1" max="10" required>
+                    </div>
+                    <button type="button" class="btn-add-to-cart">Ajouter au panier</button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact : <a href="mailto:contact@tresorsberberes.com">contact@tresorsberberes.com</a></p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:contact@tresorsberberes.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>© 2025 Trésors Berbères</p>
+    </footer>
+
+</body>
+</html>

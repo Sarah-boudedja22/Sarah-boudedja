@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactez-nous | Trésors Berbères</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="Logo Azrar - Trésors de Kabylie" >
+                <span>Trésors de Kabylie</span>
+            </div>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="produits.html">Boutique</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="accessoires.html" aria-label="Panier">Accesoires</a> </nav>
+            <form class="search-form" action="#" method="get">
+                <input type="text" placeholder="Rechercher un bijou…" name="q" />
+                <button type="submit" aria-label="Rechercher"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <section class="contact-page">
+        <a href="index.html" class="btn-back"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
+
+        <h2>Nous Contacter</h2>
+        <p class="intro-contact">Une question sur un bijou, une commande personnalisée ou une demande de partenariat ? Nous sommes là pour vous répondre dans les plus brefs délais.</p>
+
+        <div class="contact-grid">
+            
+            <div class="info-card">
+                <h3>Informations de Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Adresse (Bureau) :12 Rue des Artisans, 75003 Paris, France</p>
+                <p><i class="fas fa-envelope"></i> Email : <a href="mailto:contact@tresorsberberes.com">contact@tresorsberberes.com</a></p>
+                <p><i class="fas fa-phone"></i> Téléphone : +33 1 23 45 67 89</p>
+                
+                <h3 style="margin-top: 30px;">Suivez-nous</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <h3>Envoyez-nous un Message</h3>
+                <form action="#" method="POST" class="contact-form" onsubmit="alert('Merci pour votre message ! Il a été envoyé avec succès. Nous vous répondrons dans les 48h.')">
+                    <label for="nom">Nom Complet :</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="sujet">Sujet :</label>
+                    <input type="text" id="sujet" name="sujet">
+
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit" class="btn">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact : <a href="mailto:contact@tresorsberberes.com">contact@tresorsberberes.com</a></p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:contact@tresorsberberes.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>© 2025 Trésors Berbères</p>
+    </footer>
+
+</body>
+</html>

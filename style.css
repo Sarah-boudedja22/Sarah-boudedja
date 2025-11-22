@@ -1,0 +1,507 @@
+/* --- BASE ET FOND --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #faf7f2;
+    position: relative;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Logo en fond (filigrane) */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: url("img/logo.png") center/35% no-repeat;
+    opacity: 0.12;
+    z-index: -1;
+}
+
+/* --- EN-TÊTE (HEADER) --- */
+header {
+    background: #d2b48c;
+    color: #fff;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.logo img {
+    width: 85px;
+    border-radius: 50%;
+}
+
+/* Navigation */
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #efe5da;
+}
+
+nav a.active {
+    color: #efe5da;
+    border-bottom: 2px solid #efe5da;
+    padding-bottom: 5px;
+}
+
+/* Recherche */
+.search-form {
+    display: flex;
+}
+.search-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+.search-form button {
+    padding: 8px 12px;
+    border: none;
+    background: #b89c7d;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.search-form button:hover {
+    background: #a3896b;
+}
+
+/* --- ÉLÉMENTS COMMUNS --- */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2rem;
+    color: #8d6d4b;
+    border-bottom: 2px solid #efe5da;
+    display: inline-block;
+    padding-bottom: 10px;
+    width: auto;
+}
+.products h2, .latest h2, .popular h2, .values h2, .contact-page h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Style commun pour tous les boutons principaux */
+.btn {
+    display: inline-block;
+    background: #d2b48c;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #b89c7d;
+}
+
+/* --- BOUTON AJOUTER AU PANIER & BOUTON RETOUR --- */
+.btn-add-to-cart {
+    display: block;
+    background: #d2b48c;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.btn-add-to-cart:hover {
+    background: #a3896b;
+}
+
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    color: #8d6d4b;
+    text-decoration: none;
+    padding: 10px 0;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin-bottom: 20px;
+}
+.btn-back:hover {
+    color: #d2b48c;
+}
+.btn-back i {
+    font-size: 1.1em;
+}
+
+/* --- SECTION HERO & VIDÉO --- */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #efe5da;
+}
+.hero h1 {
+    font-size: 3rem;
+    color: #8d6d4b;
+    margin-bottom: 15px;
+}
+.hero p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.video-presentation {
+    text-align: center;
+    background: #fff;
+    padding: 40px 20px;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.video-text-content {
+    text-align: left;
+    padding-right: 20px;
+}
+.video-container-wrapper {
+    width: 100%;
+}
+.video-presentation p {
+    font-style: normal;
+    color: #333;
+    margin-bottom: 15px;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.video-container iframe,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- CARTES PRODUITS (Accueil) --- */
+.card-link {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #e2d8cc;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.gallery-preview img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #d2b48c;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card-text {
+    flex-grow: 1;
+}
+.btn-detail {
+    display: inline-block;
+    background: #d2b48c;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+.card-link:hover .btn-detail {
+    background: #a3896b;
+}
+
+/* Masquer la .gallery par défaut sur l'accueil */
+.products .gallery {
+    display: none;
+}
+
+/* Afficher la galerie sur la page Boutique et Accessoires */
+.page-catalogue .gallery {
+    display: block;
+    min-height: 180px; 
+}
+
+.page-catalogue .gallery img {
+    display: block;
+    /* CORRECTION FINALE : Hauteur fixe pour l'uniformité visuelle */
+    height: 180px; 
+    width: 100%;
+    object-fit: cover; /* ESSENTIEL pour l'uniformité */
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #d2b48c; /* Encadrement visible */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.page-catalogue .gallery img:first-child {
+    margin-top: 0;
+}
+
+/* --- STYLES FORMULAIRE DE QUANTITÉ SUR LA BOUTIQUE (produits.html) --- */
+.quantity-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.quantity-input-group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border: 1px solid #e2d8cc;
+    border-radius: 5px;
+}
+
+.quantity-input-group label {
+    font-weight: bold;
+    color: #555;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.quantity-input-group input[type="number"] {
+    width: 40px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.quantity-form .btn-add-to-cart {
+    flex-grow: 1; 
+    margin: 0; 
+    padding: 10px 15px; 
+}
+
+
+/* --- SECTION VALEURS & CONTACT --- */
+.values {
+    background: #efe5da;
+}
+.value-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e2d8cc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+.value-card h3 {
+    color: #d2b48c;
+    margin-top: 0;
+}
+.contact-page {
+    max-width: 1000px;
+    padding-top: 40px;
+}
+.intro-contact {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    color: #555;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.info-card {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+}
+.info-card h3 {
+    color: #8d6d4b;
+    border-bottom: 1px solid #e2d8cc;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+.info-card p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #8d6d4b;
+}
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #d2b48c;
+    outline: none;
+}
+.contact-form textarea {
+    resize: vertical;
+}
+.contact-form .btn {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* --- FOOTER & RESPONSIVE DESIGN --- */
+footer {
+    background: #8d6d4b;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+.social-icons a {
+    color: white;
+    margin: 0 15px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #efe5da;
+}
+
+@media (max-width: 992px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav { order: 3; }
+    .search-form { order: 2; }
+    .logo { order: 1; }
+    .hero h1 { font-size: 2.5rem; }
+}
+
+@media (max-width: 850px) { /* Pour la section vidéo/texte */
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .video-text-content {
+        padding-right: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 { font-size: 2rem; }
+}
+
+/* --- FOOTER --- */
+footer {
+    /* ... (conservez les styles de fond #8d6d4b et couleur de texte blanc) ... */
+    background: #8d6d4b;
+    color: white;
+    /* ... */
+}
+
+/* Cible les icônes dans le footer et les force au noir */
+.social-icons a {
+    color: #000000; /* FORCE LA COULEUR AU NOIR */
+    margin: 0 15px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Conserver l'effet de survol (hover) */
+.social-icons a:hover {
+    color: #efe5da; /* Devient blanc cassé au survol (Optionnel) */
+}
